@@ -114,14 +114,14 @@ if __name__ == '__main__':
                 cant_rep = tirada.count(num_max)
                 print('el numero', num_max, 'se repite', cant_rep, 'veces')
                 cantidad = cantidad - cant_rep
-                print('ahora tienes', cantidad, 'dados')
+                print('ahora tienes', cantidad, 'dados\n')
             else:
                 tirada = lista_aleatoria(cantidad)
                 print('en la tirada numero', i, 'el resultado es: ', tirada)
                 cant_rep = tirada.count(num_max)
                 print('el numero', num_max, 'se repite', cant_rep, 'veces')
                 cantidad = cantidad - cant_rep
-                print('ahora tienes', cantidad, 'dados')
+                print('ahora tienes', cantidad, 'dados\n')
                 if cantidad == 0:
                     break
             tiradas_totales+= 1     #tiradas maximas son tres, sino vuelve a empezar
@@ -130,7 +130,9 @@ if __name__ == '__main__':
                 tiradas = [None]
                 num_max = None
                 tiradas_totales = 0
+            
             print('¿deseas intentarlo de nuevo?\n')
+            intento = int(input('presione 1 para tirar: '))
         contador+= 1
 
     print('¡¡¡genial, has hecho GENERALA!!!\n')
